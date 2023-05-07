@@ -1,4 +1,8 @@
 defmodule Gatherer.HttpClient do
+  @moduledoc """
+  Implements an interface for making HTTP requests
+  """
+
   alias Gatherer.HttpClient.Api
 
   @behaviour Api

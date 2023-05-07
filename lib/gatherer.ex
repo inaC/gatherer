@@ -1,9 +1,9 @@
 defmodule Gatherer do
-  alias Gatherer.HttpClient
-
   @moduledoc """
   Documentation for `Gatherer`.
   """
+
+  alias Gatherer.HttpClient
 
   @doc """
   Fetches a page with the given url and returns a map containing the following keys:
