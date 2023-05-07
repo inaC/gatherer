@@ -1,21 +1,49 @@
 # Gatherer
 
-**TODO: Add description**
-
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `gatherer` to your list of dependencies in `mix.exs`:
+Installation can be done using [`asdf`](https://asdf-vm.com), which requires the following plugings:
 
-```elixir
-def deps do
-  [
-    {:gatherer, "~> 0.1.0"}
-  ]
-end
+- [asdf-erlang](https://github.com/asdf-vm/asdf-erlang)
+- [asdf-elixir](https://github.com/asdf-vm/asdf-elixir)
+
+Once the plugins are installed, type the following command on the project directory:
+
+```sh
+asdf install
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/gatherer>.
+## Running the app
 
+1. Install the app dependencies:
+    ```sh
+    mix deps.get
+    ```
+1. Compile the app:
+    ```sh
+    mix compile
+    ```
+1. Access the iex terminal:
+    ```sh
+    iex -S mix
+    ```
+1. Try out:
+    ```elixir
+    Gatherer.fetch("https://www.google.com")
+    ```
+
+## Tests
+
+In order to run the tests, type the following:
+```sh
+mix test
+```
+
+In order to see the coverage, add the `--cover` option:
+```sh
+mix test --cover
+```
+
+## Assumptions made
+
+- The `fetch` function does not check whether the img sources or the anchor hrefs  follow the URL syntax. Given more time, one may add validations, as a next step.
