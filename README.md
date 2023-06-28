@@ -2,7 +2,7 @@
 
 ## Installation
 
-Installation can be done using [`asdf`](https://asdf-vm.com), which requires the following plugings:
+Installation can be done using [`asdf`](https://asdf-vm.com), which requires the following plugins:
 
 - [asdf-erlang](https://github.com/asdf-vm/asdf-erlang)
 - [asdf-elixir](https://github.com/asdf-vm/asdf-elixir)
